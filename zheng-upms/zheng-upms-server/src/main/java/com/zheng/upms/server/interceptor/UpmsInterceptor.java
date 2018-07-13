@@ -3,7 +3,6 @@ package com.zheng.upms.server.interceptor;
 import com.zheng.common.util.PropertiesFileUtil;
 import com.zheng.upms.dao.model.UpmsUser;
 import com.zheng.upms.rpc.api.UpmsApiService;
-import com.zheng.upms.server.controller.manage.UpmsOrganizationController;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.subject.Subject;
 import org.slf4j.Logger;
