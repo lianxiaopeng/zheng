@@ -36,6 +36,9 @@ public class UpmsUserServiceImpl extends BaseServiceImpl<UpmsUserMapper, UpmsUse
             return null;
         }
         upmsUserMapper.insert(upmsUser);
+        if(upmsUser.getUsername().equals("lianxp")){
+            throw new RuntimeException("-----------------");
+        }
         return upmsUser;
     }
 

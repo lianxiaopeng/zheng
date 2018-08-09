@@ -97,7 +97,6 @@ public class UpmsUserController extends BaseController {
     public String role(@PathVariable("id") int id, ModelMap modelMap) {
         // 所有角色
         List<UpmsRole> upmsRoles = upmsRoleService.selectByExample(new UpmsRoleExample());
-        System.out.print(111);
         // 用户拥有角色
         UpmsUserRoleExample upmsUserRoleExample = new UpmsUserRoleExample();
         upmsUserRoleExample.createCriteria()
